@@ -1,0 +1,191 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --blue: #3B82F6;
+  --blue-dark: #2563EB;
+  --navy: #0D1B4F;
+  --green: #16A34A;
+  --green-bright: #22C55E;
+  --white: #ffffff;
+  --text-dark: #0D1B4F;
+  --text-mid: #6B7280;
+  --text-light: #9CA3AF;
+  --bg-light: #F8FAFC;
+  --bg-blue: #EBF4FF;
+  --border: #E5E7EB;
+  --gold: #F59E0B;
+  --red: #e53935;
+
+  --background: #ffffff;
+  --foreground: #0D1B4F;
+  --card: #ffffff;
+  --card-foreground: #0D1B4F;
+  --popover: #ffffff;
+  --popover-foreground: #0D1B4F;
+  --primary: #0D1B4F;
+  --primary-foreground: #ffffff;
+  --secondary: #F8FAFC;
+  --secondary-foreground: #0D1B4F;
+  --muted: #F8FAFC;
+  --muted-foreground: #6B7280;
+  --accent: #EBF4FF;
+  --accent-foreground: #0D1B4F;
+  --destructive: #e53935;
+  --destructive-foreground: #ffffff;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #3B82F6;
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans:
+    var(--font-rubik), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground text-[15px] antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Landing layout & surfaces — navy / blue / green palette unchanged */
+@layer components {
+  .hr-container {
+    @apply mx-auto w-full max-w-[1200px] px-5 md:px-8 lg:px-10;
+  }
+  .hr-section {
+    @apply py-16 md:py-24 lg:py-28;
+  }
+  .hr-section-compact {
+    @apply py-14 md:py-20 lg:py-24;
+  }
+  .hr-surface-muted {
+    @apply bg-[var(--bg-light)];
+  }
+  .hr-eyebrow {
+    @apply mb-3 text-[11px] font-bold tracking-[0.08em] text-[var(--blue)];
+  }
+  .hr-headline {
+    @apply text-balance text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[var(--navy)] sm:text-3xl md:text-4xl lg:text-[2.45rem];
+  }
+  .hr-lead {
+    @apply max-w-2xl text-base leading-relaxed text-[var(--text-mid)] md:text-[17px];
+  }
+  .hr-card {
+    @apply rounded-2xl border border-[var(--border)] bg-white shadow-[0_1px_2px_rgba(13,27,79,0.04),0_12px_40px_-12px_rgba(13,27,79,0.12)];
+  }
+  .hr-btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-[var(--green-bright)] px-8 py-3.5 text-[15px] font-semibold text-white shadow-sm shadow-[var(--green)]/25 transition-all duration-200 hover:bg-[var(--green)] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2 active:translate-y-px;
+  }
+  .hr-btn-primary-sm {
+    @apply inline-flex items-center justify-center rounded-xl bg-[var(--green-bright)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[var(--green)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2;
+  }
+  .hr-btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-[var(--navy)]/15 bg-white px-7 py-3.5 text-sm font-semibold text-[var(--navy)] transition-all duration-200 hover:border-[var(--blue)] hover:bg-[var(--bg-blue)] hover:text-[var(--blue)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2;
+  }
+}
+
+/* Field-service integration marquee (hellorates-contractor reference) */
+.hr-integration-marquee {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+.hr-integration-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 0;
+  animation: hr-integration-scroll 45s linear infinite;
+}
+.hr-integration-track:hover {
+  animation-play-state: paused;
+}
+.hr-integration-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 24px;
+  flex-shrink: 0;
+}
+.hr-integration-marquee img {
+  filter: grayscale(100%);
+  opacity: 0.72;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+.hr-integration-marquee img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.hr-integration-mhelpdesk {
+  height: 36px !important;
+  width: auto;
+  max-width: 185px;
+  object-fit: contain;
+  transform: translateY(5px);
+}
+@keyframes hr-integration-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hr-integration-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    row-gap: 16px;
+  }
+  .hr-integration-group[aria-hidden="true"] {
+    display: none;
+  }
+  .hr-integration-group {
+    padding: 0;
+    justify-content: center;
+  }
+  .hr-integration-marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
