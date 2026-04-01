@@ -23,7 +23,7 @@ export function CtaStrip() {
       <div className="hr-container relative flex flex-col items-stretch gap-8 md:flex-row md:items-center md:justify-between md:gap-10">
         <div className="text-center md:max-w-[min(100%,28rem)] md:text-left">
           <h2 className="text-balance text-lg font-bold leading-snug tracking-tight text-white sm:text-xl md:text-[1.125rem]">
-            Plans Start at Just $67/mo. Zero Dealer Fees.
+            Plans Start at Just $67/mo. Zero Merchant Financing Fees.
           </h2>
           <p className="mt-3 text-[13px] text-white/88">
             No contract · 60-day money-back guarantee · Cancel anytime

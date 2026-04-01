@@ -12,9 +12,9 @@ export function Hero() {
   };
 
   const benefits = [
-    "Credit decline recovery",
-    "Partial approval gap coverage",
-    "Eliminates 5–15% dealer fees",
+    "Patient credit decline recovery",
+    "Full treatment plan funding",
+    "Eliminates per-loan merchant financing fees",
   ];
 
   return (
@@ -37,24 +37,24 @@ export function Hero() {
       <div className="hr-container relative z-10 grid grid-cols-1 items-center gap-10 py-10 md:gap-12 md:py-12 lg:grid-cols-[minmax(0,1fr)_min(480px,44%)] lg:gap-16 lg:py-14">
         <div className="hero-content max-w-[640px] lg:max-w-none">
           <p className="hr-eyebrow">
-            Contractor Financing. Built to Close More Deals.
+            Patient Financing. Built to Grow Your Practice.
           </p>
 
-          <h1 className="hr-headline mb-5 max-w-[22ch] md:max-w-[28ch]">
-            Close More Jobs. Keep Every Dollar.
+          <h1 className="hr-headline mb-5 max-w-[22ch] md:max-w-[32ch]">
+            More Patients Approved. More Treatment Plans Accepted.
             <br />
-            Zero Dealer Fees.{" "}
+            Zero Merchant Financing Fees.{" "}
             <span className="text-[var(--green)]">Guaranteed.</span>
           </h1>
 
           <p className="hr-lead mb-8">
-            Whether you already offer financing or are starting from scratch,
-            HelloRates recovers credit declines, funds the gap on partial
-            approvals, and eliminates 5–15% dealer fees.{" "}
+            Whether you already offer patient financing or are starting from scratch,
+            HelloRates approves patients other programs decline, funds treatment plans
+            of any size, and charges zero merchant financing fees.{" "}
             <span className="font-semibold text-[var(--navy)]">
-              Use it as your complete program or your most powerful backup.
+              Use it as your complete financing solution or your most powerful backup.
             </span>{" "}
-            More approvals, stronger margins, zero dealer fees.
+            More approvals, more accepted treatment plans, zero merchant financing fees.
           </p>
 
           <ul className="mb-8 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:gap-3">
@@ -100,8 +100,7 @@ export function Hero() {
               </div>
               <div className="text-left">
                 <div className="text-xs font-semibold text-[var(--navy)]">
-                  Trusted by <span className="tabular-nums">7,800+</span>{" "}
-                  contractors
+                  Trusted by <span className="tabular-nums">8,300+</span> practices
                 </div>
                 <div className="text-[11px] tracking-wide text-[var(--gold)]">
                   ★★★★★

@@ -9,26 +9,26 @@ export function FinalCta() {
   };
 
   return (
-    <section className="relative overflow-hidden border-t border-[#BFDBFE] bg-gradient-to-br from-[var(--bg-blue)] via-white to-[var(--bg-light)] py-16 md:py-24">
+    <section className="relative overflow-hidden border-t border-[#BFDBFE] bg-[var(--bg-blue)] py-16 md:py-24">
       <div
         className="pointer-events-none absolute inset-0 opacity-70"
         aria-hidden
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 130, 246, 0.12), transparent 55%)",
+            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(61, 168, 255, 0.12), transparent 55%)",
         }}
       />
-      <div className="hr-container relative text-center">
-        <h2 className="hr-headline mx-auto mb-4 max-w-[20ch] md:max-w-none">
-          Close More Jobs. Keep Every Dollar.
+      <div className="hr-container relative max-w-[640px] text-center">
+        <h2 className="mb-3.5 text-balance text-[2.75rem] font-bold leading-[1.15] tracking-[-0.04em] text-[var(--navy)] md:text-[2.75rem]">
+          Approve More Patients. Keep Every Dollar.
           <br />
           <span className="text-[var(--green)]">Get Started Today.</span>
         </h2>
-        <p className="hr-lead mx-auto mb-10 max-w-xl">
-          Join 7,800 contractors already recovering declined deals, eliminating merchant and loan fees, and funding
-          partial approvals. Live in minutes. 60-day full money-back guarantee.
+        <p className="hr-lead mx-auto mb-10 max-w-[560px]">
+          Join 8,300+ practices already treating more patients, eliminating merchant financing fees, and funding complete
+          treatment plans. Live in minutes. 60-day full money-back guarantee.
         </p>
-        <div className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <div className="mb-3 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <button type="button" onClick={() => scrollTo("pricing")} className="hr-btn-primary">
             Get Started Now
           </button>
@@ -36,7 +36,7 @@ export function FinalCta() {
             Book a Call with a Financing Expert
           </Link>
         </div>
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-[var(--text-mid)]">
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-[var(--text-mid)]">
           <span>No contract</span>
           <span>Cancel anytime</span>
           <span>Live in minutes</span>

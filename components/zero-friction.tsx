@@ -1,35 +1,35 @@
-"use client"
+"use client";
 
-import { XCircle, Check } from "lucide-react"
+import { XCircle } from "lucide-react";
 
 export function ZeroFriction() {
   const whatYouNeverDo = [
     {
-      title: "No paperwork. Ever.",
-      desc: "The homeowner is the borrower. There is no contractor-side paperwork, no forms, no documents to chase. You hand a card or share a link and walk away.",
+      title: "No Paperwork. Ever.",
+      desc: "The patient is the borrower. There is no practice-side paperwork, no forms, no documents to chase. You hand a card or share a link and your team is done.",
     },
     {
-      title: "No switching lenders. No training required.",
-      desc: "Keep your primary lender exactly as-is. You don't need to understand loan terms, rates, or underwriting. HelloRates handles everything. You just close the job.",
+      title: "No Switching Programs. No Training Required.",
+      desc: "Keep your current financing program exactly as-is. Your team doesn't need to understand loan terms or underwriting. HelloRates handles everything. Your staff just hands a card.",
     },
     {
-      title: "No customer handholding or follow-up.",
-      desc: "Your customer applies privately on their phone. You get a notification when they're approved. No calls, no chasing, no explaining loan terms. You collect payment.",
+      title: "No Patient Handholding Or Follow-Up.",
+      desc: "Your patient applies privately on their phone. You get a notification when they're approved. No calls, no chasing, no explaining financing terms. Your practice collects payment.",
     },
     {
-      title: "No fees deducted from your payment. Ever.",
-      desc: "Other programs charge 5–15% per funded deal. HelloRates charges $0. You invoice for the full amount, you receive the full amount. HelloRates earns on loan origination, not from you.",
+      title: "No Fees Deducted From Your Payment. Ever.",
+      desc: "Other patient financing programs charge 5–15% per funded treatment. HelloRates charges $0. You bill the full treatment amount, you receive the full treatment amount. HelloRates earns on loan origination, not from your practice.",
     },
-  ]
+  ];
 
   const paymentSteps = [
-    "Customer applies and sees up to 3 approval options. They choose the best one for their situation.",
-    "The loan funds direct to the customer within 24–48 hours of loan confirmation.",
+    "Patient applies and sees up to 3 approval options. They choose the best one for their situation.",
+    "The funds go directly to your practice within 24–48 hours of loan confirmation.",
     <>
-      <strong className="text-[var(--navy)]">Customer pays you in full on your terms.</strong> Before the job starts
-      or however you choose to structure it.
+      <strong className="text-[var(--navy)]">Patient pays your practice in full on your terms.</strong> Before treatment
+      begins or however you choose to structure it.
     </>,
-  ]
+  ];
 
   return (
     <section className="hr-section hr-surface-muted">
@@ -41,43 +41,41 @@ export function ZeroFriction() {
           <span className="text-[var(--green)]">Go Live the Same Day.</span>
         </h2>
         <p className="hr-lead mb-10 max-w-2xl">
-          Already using a financing program? HelloRates runs alongside it and covers everything your current program
-          cannot: declines, partial approvals, and dealer fees. If your program can&apos;t do all three, it&apos;s
-          incomplete. HelloRates makes it whole. No switching. No training. No changes to how you work.
+          Already using a patient financing program? HelloRates runs alongside it and covers every patient your current
+          program declines, every partial approval gap, and eliminates all merchant financing fees. If your program
+          can&apos;t do all three, it&apos;s incomplete. HelloRates makes it whole. No switching. No training. No changes
+          to how your
+          practice runs.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
-          {/* Left: What you never have to do */}
           <div className="flex flex-col gap-4">
             {whatYouNeverDo.map((item, i) => (
               <div key={i} className="hr-card flex items-start gap-4 p-5 md:p-6">
-                <div className="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0">
-                  <XCircle className="w-5 h-5 text-[var(--red)]" />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-50">
+                  <XCircle className="h-5 w-5 text-[var(--red)]" />
                 </div>
                 <div>
-                  <div className="text-[15px] font-bold text-[var(--navy)] mb-1">{item.title}</div>
-                  <div className="text-[13px] text-[var(--text-mid)] leading-relaxed">{item.desc}</div>
+                  <div className="mb-1 text-[15px] font-bold text-[var(--navy)]">{item.title}</div>
+                  <div className="text-[13px] leading-relaxed text-[var(--text-mid)]">{item.desc}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Right: Payment card */}
           <div className="flex flex-col gap-5">
-            <div className="hr-card border-2 border-[var(--blue)]/35 p-7 text-center shadow-md md:p-8">
-              <div className="text-xs font-semibold text-[var(--navy)] tracking-wider mb-2">You get paid</div>
-              <div className="text-5xl font-bold text-[var(--green)] tracking-tight leading-none mb-1">In Cash</div>
-              <div className="text-base font-semibold text-[var(--navy)] mb-4">
-                Upfront within 24–48 hours
-              </div>
-              <div className="h-px bg-[var(--border)] mb-4" />
+            <div className="hr-card border-[3px] border-[var(--blue)] p-7 text-center shadow-md md:p-8">
+              <div className="mb-2 text-xs font-semibold tracking-wider text-[var(--navy)]">Your practice gets paid</div>
+              <div className="mb-1 text-5xl font-bold leading-none tracking-tight text-[var(--green)]">In Cash</div>
+              <div className="mb-4 text-base font-semibold text-[var(--navy)]">Within 24–48 hours</div>
+              <div className="mb-4 h-px bg-[var(--border)]" />
               <div className="flex flex-col gap-2.5">
-                {paymentSteps.map((step, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-left">
-                    <div className="w-7 h-7 rounded-full bg-[var(--green)] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white mt-0.5">
-                      {i + 1}
+                {paymentSteps.map((step, j) => (
+                  <div key={j} className="flex items-start gap-2.5 text-left">
+                    <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--green)] text-xs font-bold text-white">
+                      {j + 1}
                     </div>
-                    <div className="text-[13px] text-[var(--text-mid)] leading-relaxed">{step}</div>
+                    <div className="text-[13px] leading-relaxed text-[var(--text-mid)]">{step}</div>
                   </div>
                 ))}
               </div>
@@ -86,5 +84,5 @@ export function ZeroFriction() {
         </div>
       </div>
     </section>
-  )
+  );
 }

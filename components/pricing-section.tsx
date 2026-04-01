@@ -7,22 +7,18 @@ export function PricingSection() {
     "35+ lender approval paths",
     "Approvals down to 500 FICO",
     "Unlimited applications",
-    "Zero dealer or merchant fees",
-    "Partial approval gap funding",
+    "Zero merchant financing fees",
+    "Full treatment plan gap funding",
     "Full system activation included",
   ]
 
-  const bonusFeatures = [
-    "0% Intro APR program up to 21 months",
-    "Commercial financing program included",
-    "60-day risk-free guarantee",
-  ]
+  const bonusFeatures = ["0% Intro APR program up to 21 months", "60-day risk-free guarantee"]
 
   const activationFeatures = [
-    "500 co-branded QR cards",
-    "Co-branded customer loan portal",
-    "Print-ready co-branded flyers",
-    'Branded "How It Works" video',
+    "500 co-branded patient QR cards",
+    "Co-branded patient financing portal",
+    "Print-ready co-branded patient brochures",
+    'Branded "How It Works" patient video',
     "Website badge + financing link",
     "Social media asset pack",
   ]
@@ -35,11 +31,11 @@ export function PricingSection() {
           <h2 className="hr-headline mb-4">
             $67 a Month. Unlimited Approvals.
             <br />
-            <span className="text-[var(--green)]">Zero Dealer Fees.</span>
+            <span className="text-[var(--green)]">Zero Merchant Financing Fees.</span>
           </h2>
           <p className="hr-lead mx-auto">
-            No per-loan charges. No merchant fees. No contracts. Every plan includes full system activation, setup, and
-            your field-ready sales tools to ensure you close financed deals from day one.
+            No per-loan charges. No merchant financing fees. No contracts. Every plan includes full system activation,
+            setup, and your field-ready sales tools to ensure you approve financed patients from day one.
           </p>
         </div>
 
@@ -54,7 +50,7 @@ export function PricingSection() {
               <div className="text-[26px] font-bold text-white leading-tight mb-1.5">Get Fully Activated Today</div>
               <div className="text-[13px] font-semibold text-white/70 mb-1">Showroom ready. Field ready. Day one.</div>
               <div className="text-[11px] font-semibold text-white/45 tracking-wide">
-                HelloRates Contractor Financing Program
+                HelloRates Patient Financing Program
               </div>
             </div>
             <div className="flex-1 p-3.5 px-6 flex flex-col gap-2">
@@ -68,9 +64,9 @@ export function PricingSection() {
                 <Shield className="w-[18px] h-[18px] text-[var(--green-bright)] flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <div className="text-xs text-white/80 leading-snug">
                   <strong className="text-white block text-xs mb-0.5">
-                    Everything above ships with both plans.
+                    Everything above is included with both plans.
                   </strong>
-                  No extra setup fees. No waiting. Your activation is complete the same day you sign up.
+                  No extra setup fees. No waiting. Your practice is live the same day you sign up.
                 </div>
               </div>
             </div>
@@ -177,17 +173,17 @@ export function PricingSection() {
           {/* ROI */}
           <div className="hr-card p-7 md:p-8">
             <div className="text-lg font-bold text-[var(--navy)] mb-2 leading-snug">
-              One Closed Job Pays for HelloRates for Years
+              One Approved Patient Pays for HelloRates for Years
             </div>
             <div className="text-sm text-[var(--text-mid)] leading-relaxed mb-4">
-              Recover one deal or eliminate one dealer fee and your cost is covered.
+              Approve one patient or eliminate one merchant financing fee and your cost is covered.
             </div>
             <div className="flex items-baseline gap-2 mb-1">
               <div className="text-[48px] font-bold text-[var(--green)] tracking-tight leading-none">10+</div>
-              <div className="text-[15px] font-bold text-[var(--navy)]">Years of Value From One Deal</div>
+              <div className="text-[15px] font-bold text-[var(--navy)]">Years of Value From One Approved Patient</div>
             </div>
             <div className="text-xs text-[var(--text-light)]">
-              Typical jobs: $12K to $18K | One funded deal = years of ROI
+              Typical treatments: $5K to $15K &nbsp;|&nbsp; One funded treatment = years of ROI
             </div>
           </div>
 
@@ -195,7 +191,7 @@ export function PricingSection() {
           <div className="hr-card border-2 border-[var(--green-bright)] p-7 ring-2 ring-[var(--green)]/15 md:p-8">
             <div className="text-[22px] font-bold text-[var(--navy)] mb-1.5">60-Day Risk Free Guarantee</div>
             <div className="text-sm text-[var(--text-mid)] mb-3.5">
-              If you don&apos;t get approved deals, you don&apos;t pay.
+              If your patients don&apos;t get approved, you don&apos;t pay.
             </div>
             <div className="flex gap-3 items-start">
               <div className="w-7 h-7 rounded-full bg-[var(--bg-blue)] flex items-center justify-center flex-shrink-0">
@@ -215,7 +211,7 @@ export function PricingSection() {
         {/* Closing line */}
         <div className="border-t border-[var(--border)] pt-10 text-center">
           <div className="text-lg font-medium text-[var(--navy)] md:text-xl">
-            It&apos;s not just financing. <strong className="font-bold">It&apos;s how you close more deals.</strong>
+            It&apos;s not just financing. <strong className="font-bold">It&apos;s how you treat more patients.</strong>
           </div>
         </div>
       </div>

@@ -50,16 +50,16 @@ export function Footer() {
             className="inline-flex flex-col items-center transition-opacity lg:items-start"
           >
             <HelloRatesImage
-              src="https://hellorates.com/wp-content/uploads/2026/03/contractor-logo.png"
-              alt="HelloRates — Contractor Financing Solutions"
+              src="/logo.png"
+              alt="HelloRates — Patient Financing Solutions"
               width={200}
               height={56}
               className="h-[38px] w-auto object-contain"
             />
           </Link>
           <p className="mt-3.5 max-w-sm text-xs leading-relaxed text-white/85">
-            HelloRates is the most comprehensive contractor financing program in the market. Recover credit declines,
-            fund the gap on partial approvals, and eliminate 5–15% dealer fees. Use it as your primary program or your
+            HelloRates is the most comprehensive patient financing solution in the market. Treat more patients, fund
+            complete treatment plans, and eliminate 5–15% merchant financing fees. Use it as your primary program or your
             most powerful backup. Zero risk. No contracts.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -79,8 +79,8 @@ export function Footer() {
         </div>
 
         <div className="border-white/[0.08] lg:border-r lg:px-5">
-          <h2 className={colTitleClass}>Contractors</h2>
-          <nav className="flex flex-col" aria-label="Contractors">
+          <h2 className={colTitleClass}>Practices</h2>
+          <nav className="flex flex-col" aria-label="Practices">
             <button type="button" onClick={() => scrollTo("how-it-works")} className={linkClass}>
               How It Works
             </button>
@@ -100,7 +100,7 @@ export function Footer() {
               href="https://app.hellorates.com/login"
               className={linkClass}
             >
-              Contractor Login
+              Practice Login
             </Link>
             <button
               type="button"
@@ -157,7 +157,7 @@ export function Footer() {
 
       <div className="hr-container flex flex-col items-start justify-between gap-3 border-b border-white/[0.06] py-4 md:flex-row md:items-center">
         <p className="order-2 text-xs text-white/85 md:order-1">
-          © {new Date().getFullYear()} HelloRates Contractor Financing Solutions. All rights reserved.
+          © {new Date().getFullYear()} HelloRates Patient Financing Solutions. All rights reserved.
         </p>
         <nav
           className="order-1 flex flex-wrap gap-x-5 gap-y-2 md:order-2"
@@ -207,7 +207,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-1.5">
             <DollarSign className="h-4 w-4 shrink-0 text-white" strokeWidth={1.5} aria-hidden />
-            <span className="text-[11px] font-semibold text-white/75">Zero Dealer Fees</span>
+            <span className="text-[11px] font-semibold text-white/75">Zero Merchant Financing Fees</span>
           </div>
           <div className="flex w-full items-center justify-center gap-1.5 pt-2 md:ml-auto md:w-auto md:justify-end md:pt-0">
             <Check className="h-3.5 w-3.5 shrink-0 text-white" strokeWidth={2} aria-hidden />

@@ -39,7 +39,7 @@ export function RoiCalculator() {
 
   const totalLoss = loss1 + loss2 + loss3
   const totalNet = Math.max(0, totalLoss - hrCost)
-  const paybackDeals = Math.ceil(hrCost / (jobValue || 12000))
+  const paybackTreatments = Math.ceil(hrCost / (jobValue || 12000))
 
   const handleFreqChange = (mode: "month" | "year") => {
     if (mode === "year" && freqMode === "month") {
@@ -69,8 +69,8 @@ export function RoiCalculator() {
       <div className="hr-container">
         <div className="mb-10 text-center">
           <p className="hr-eyebrow">Revenue Recovery Calculator</p>
-          <h2 className="hr-headline mx-auto mb-4 max-w-3xl">
-            How Much Revenue Are You
+          <h2 className="hr-headline mx-auto mb-4 max-w-[34rem] text-[2.125rem] md:text-4xl">
+            How Much Revenue Is Your Practice
             <br />
             <span className="text-[var(--green)]">Leaving Behind Every Year?</span>
           </h2>
@@ -104,16 +104,16 @@ export function RoiCalculator() {
           <div className="bg-white rounded-2xl border-2 border-[var(--blue)] overflow-hidden shadow-lg flex flex-col">
             <div className="px-5 py-5 border-b border-white/10 bg-[var(--navy)]">
               <div className="text-xl font-bold text-white leading-tight tracking-tight mb-1.5">
-                Declined Deal Recovery Calculator
+                Declined Patient Recovery Calculator
               </div>
               <div className="text-xs text-white/85 leading-relaxed">
-                When your primary lender says no, the whole job is lost. How much is that costing you?
+                When your program says no, the patient leaves. How much is that costing your practice?
               </div>
             </div>
             <div className="p-5 flex-1 flex flex-col gap-4">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Average job value</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">Average treatment plan value</span>
                   <span className="text-sm font-bold text-[var(--navy)]">{formatCurrency(jobValue)}</span>
                 </div>
                 <input
@@ -133,7 +133,9 @@ export function RoiCalculator() {
               </div>
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Declined deals per {isYear ? "year" : "month"}</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">
+                    Declined patients per {isYear ? "year" : "month"}
+                  </span>
                   <span className="text-sm font-bold text-[var(--navy)]">
                     {declinedDeals}
                     {dealLabel}
@@ -178,16 +180,17 @@ export function RoiCalculator() {
           <div className="bg-white rounded-2xl border-2 border-[var(--blue)] overflow-hidden shadow-lg flex flex-col">
             <div className="px-5 py-5 border-b border-white/10 bg-[var(--navy)]">
               <div className="text-xl font-bold text-white leading-tight tracking-tight mb-1.5">
-                Partial Approval Gap Recovery Calculator
+                Partial Treatment Plan Gap Calculator
               </div>
               <div className="text-xs text-white/85 leading-relaxed">
-                Your lender approves $9k on a $14k job. The gap kills the deal. How much is that costing you?
+                Your program funds part of the treatment. The patient accepts less care. How much is that costing your
+                practice?
               </div>
             </div>
             <div className="p-5 flex-1 flex flex-col gap-4">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Average gap amount</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">Average funding gap per patient</span>
                   <span className="text-sm font-bold text-[var(--navy)]">{formatCurrency(gapAmount)}</span>
                 </div>
                 <input
@@ -207,7 +210,9 @@ export function RoiCalculator() {
               </div>
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Partial approvals per {isYear ? "year" : "month"}</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">
+                    Partial approvals per {isYear ? "year" : "month"}
+                  </span>
                   <span className="text-sm font-bold text-[var(--navy)]">
                     {partialApprovals}
                     {dealLabel}
@@ -252,16 +257,16 @@ export function RoiCalculator() {
           <div className="bg-white rounded-2xl border-2 border-[var(--blue)] overflow-hidden shadow-lg flex flex-col">
             <div className="px-5 py-5 border-b border-white/10 bg-[var(--navy)]">
               <div className="text-xl font-bold text-white leading-tight tracking-tight mb-1.5">
-                Merchant & Loan Fee Savings Calculator
+                Merchant Financing Fee Savings Calculator
               </div>
               <div className="text-xs text-white/85 leading-relaxed">
-                How much are dealer and merchant fees costing you annually?
+                How much are per-loan merchant financing fees costing your practice annually?
               </div>
             </div>
             <div className="p-5 flex-1 flex flex-col gap-4">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Funded jobs per month</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">Funded treatments per month</span>
                   <span className="text-sm font-bold text-[var(--navy)]">{fundedJobs}</span>
                 </div>
                 <input
@@ -281,7 +286,7 @@ export function RoiCalculator() {
               </div>
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Average funded job value</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">Average funded treatment value</span>
                   <span className="text-sm font-bold text-[var(--navy)]">{formatCurrency(fundedJobValue)}</span>
                 </div>
                 <input
@@ -301,7 +306,7 @@ export function RoiCalculator() {
               </div>
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-xs font-semibold text-[var(--navy)]">Current merchant fee rate</span>
+                  <span className="text-xs font-semibold text-[var(--navy)]">Current merchant financing fee rate</span>
                   <span className="text-sm font-bold text-[var(--navy)]">{feeRate}%</span>
                 </div>
                 <input
@@ -378,9 +383,9 @@ export function RoiCalculator() {
           <div className="border-t border-white/10 pt-5 flex flex-wrap items-center justify-between gap-5">
             <div>
               <div className="text-sm text-white">
-                {paybackDeals <= 1
-                  ? "HelloRates pays for itself after your first funded deal"
-                  : `HelloRates pays for itself after ${paybackDeals} funded deals`}
+                {paybackTreatments <= 1
+                  ? "HelloRates pays for itself after your first funded treatment"
+                  : `HelloRates pays for itself after ${paybackTreatments} funded treatments`}
               </div>
               <div className="text-[10px] text-white/55 mt-1">
                 Based on your slider inputs. Your actual results will vary.

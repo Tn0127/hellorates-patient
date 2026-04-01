@@ -33,11 +33,11 @@ export function Navbar() {
           className="relative inline-flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--navy)]"
         >
           <HelloRatesImage
-            src="https://hellorates.com/wp-content/uploads/2026/03/contractor-logo.png"
-            alt="HelloRates — Contractor Financing Solutions"
-            width={200}
-            height={56}
-            className="h-10 w-auto object-contain md:h-11"
+            src="/logo.png"
+            alt="HelloRates — Patient Financing Solutions"
+            width={220}
+            height={62}
+            className="h-11 w-auto object-contain md:h-12"
             priority
           />
         </Link>
@@ -75,7 +75,7 @@ export function Navbar() {
               className={linkClass}
               onClick={() => setIsOpen(false)}
             >
-              Contractor Login
+              Practice Login
             </Link>
             <div className="mt-3 border-t border-white/10 pt-3 md:mt-0 md:ml-3 md:border-0 md:pt-0 md:pl-3 md:border-l md:border-white/15">
               <button

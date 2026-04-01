@@ -72,60 +72,60 @@ export function ProblemSolution() {
   const problems = [
     {
       number: 1,
-      problemTitle: "Credit Declines",
+      problemTitle: "Patient Credit Declines",
       problemItems: [
-        "Traditional lenders approve 650–850 FICO only",
-        "Customers below 650 FICO get declined",
-        "Deal dies even after the customer said yes",
-        "30% of your market goes unfunded",
+        "Most financing programs approve 650–850 FICO only",
+        "Patients below 650 FICO get declined for care",
+        "Treatment plan dies even after the patient said yes",
+        "30% of your patients go untreated or seek care elsewhere",
       ],
       problemSummary: "Their FICO range: 650–850 only. Below 650. Declined.",
       fixTitle: "HelloRates Approves 500–850 FICO",
       fixItems: [
         "35+ lender guidelines checked simultaneously",
-        "One soft pull. Zero harm to customer's credit",
+        "One soft pull. Zero harm to patient's credit",
         "Approvals down to 500 FICO",
-        "Covers the 650–500 band most lenders won't touch",
+        "Covers the 650–500 band most programs won't touch",
       ],
-      fixSummary: "Our FICO range: 500–850. That is 30% more of your market.",
+      fixSummary: "Our FICO range: 500–850. Treat more patients, treat more cases.",
     },
     {
       number: 2,
-      problemTitle: "Partial Approvals",
+      problemTitle: "Partial Treatment Plan Approvals",
       problemItems: [
-        "Lender approves $9k on a $14k job",
-        "The $5k gap kills the sale and the commission",
-        "Customer loses trust. Relationship damaged.",
-        "Job lost even though financing was offered",
+        "Program approves $6k on a $10k treatment plan",
+        "The $4k gap means the patient accepts less care or leaves",
+        "Patient loses confidence. Relationship and referrals at risk.",
+        "Treatment deferred even though financing was offered",
       ],
-      problemSummary: "$9k approved. $5k gap. Deal dead. Commission gone.",
-      fixTitle: "HelloRates Funds the Gap",
+      problemSummary: "$6k approved. $4k gap. Patient undertreated. Revenue lost.",
+      fixTitle: "HelloRates Funds the Full Treatment Plan",
       fixItems: [
-        "We fund the $5k gap your lender left short",
-        "The job stays on track. No out-of-pocket gap.",
-        "Customer gets fully financed",
-        "You collect the full $14k. Commission saved.",
+        "We fund the gap your primary program left short",
+        "The full treatment plan stays on track. No out-of-pocket gap for the patient.",
+        "Patient gets fully financed for the complete care they need",
+        "You collect in full. Patient gets the best outcome.",
       ],
-      fixSummary: "$9k + $5k funded = $14k. Full job. Full pay. Commission saved.",
+      fixSummary: "$6k + $4k funded = $10k. Full treatment plan. Full payment. Patient retained.",
     },
     {
       number: 3,
-      problemTitle: "Dealer & Loan Fees",
+      problemTitle: "Per-Loan Merchant Financing Fees",
       problemItems: [
-        "5–15% dealer fee deducted from every funded deal",
-        "$1,200 gone on a $15k job at 8%",
-        "Taken before you see a cent",
-        "Compounds on every job, every month",
+        "5–15% merchant financing fee deducted from every funded treatment",
+        "$800 gone on a $10k treatment plan at 8%",
+        "Taken before your practice sees a cent",
+        "Compounds on every treatment, every month",
       ],
-      problemSummary: "$15k job. 8% fee = $1,200 deducted. You receive $13,800.",
-      fixTitle: "Zero Per-Deal Fees. Ever.",
+      problemSummary: "$10k treatment. 8% fee = $800 deducted. You receive $9,200.",
+      fixTitle: "Zero Merchant Financing Fees. Ever.",
       fixItems: [
-        "Zero dealer, loan or discount fees on any funded deal",
-        "Flat $67/mo. Covers unlimited applications.",
-        "You get paid in cash, in full, upfront",
-        "No deductions. No hoops. Full invoice amount.",
+        "Zero processing, loan or discount fees on any funded treatment",
+        "Flat $67/mo. Covers unlimited patient applications.",
+        "Your practice gets paid in full, upfront",
+        "No deductions. No holdbacks. Full treatment amount.",
       ],
-      fixSummary: "$15k job. Zero fees. You receive $15,000. In cash. In full. Upfront.",
+      fixSummary: "$10k treatment. Zero fees. Your practice receives $10,000. In full. Upfront.",
     },
   ]
 
@@ -135,16 +135,16 @@ export function ProblemSolution() {
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <p className="hr-eyebrow">Three Problems. Three Fixes.</p>
           <h2 className="hr-headline mb-4">
-            Traditional Contractor Financing
+            Traditional Patient Financing Programs
             <br />
-            Has 3 Costly Problems.
+            Have 3 Costly Problems.
             <br />
             <span className="text-[var(--green)]">HelloRates Solves All Three.</span>
           </h2>
           <p className="hr-lead mx-auto">
-            Credit declines, partial approval gaps, and 5–15% in dealer fees are costing contractors revenue, margins,
-            and reputation on every job. Here is exactly what causes each one and precisely how HelloRates eliminates
-            it.
+            Credit declines, partial treatment plan funding gaps, and per-loan merchant financing fees are costing
+            practices revenue, margins, and patient relationships on every case. Here is exactly what causes each one
+            and precisely how HelloRates eliminates it.
           </p>
         </div>
 
@@ -172,12 +172,12 @@ export function ProblemSolution() {
                 <path d="M16 3.13a4 4 0 010 7.75" />
               </svg>
             </div>
-            <div className="text-[34px] font-bold text-[var(--navy)] tracking-tight leading-none">7,800+</div>
+            <div className="text-[34px] font-bold text-[var(--navy)] tracking-tight leading-none">8,300+</div>
             <div className="text-sm font-bold text-[var(--navy)] leading-snug">
-              Contractors Already Closing More Deals
+              Practices Already Growing Their Revenue
             </div>
             <div className="text-xs text-[var(--text-mid)] leading-snug">
-              Using HelloRates as their primary program or most powerful backup.
+              Using HelloRates as their primary patient financing program or most powerful backup.
             </div>
           </div>
 
@@ -196,9 +196,11 @@ export function ProblemSolution() {
               </svg>
             </div>
             <div className="text-[34px] font-bold text-[var(--green)] tracking-tight leading-none">$0</div>
-            <div className="text-sm font-bold text-[var(--navy)] leading-snug">In Dealer Fees. On Every Funded Job.</div>
+            <div className="text-sm font-bold text-[var(--navy)] leading-snug">
+              In Merchant Financing Fees. On Every Funded Treatment.
+            </div>
             <div className="text-xs text-[var(--text-mid)] leading-snug">
-              Zero dealer, loan or merchant fees. You keep 100% of every dollar you earn.
+              Zero processing, loan or merchant financing fees. Your practice keeps 100% of every dollar billed.
             </div>
           </div>
 
@@ -217,10 +219,10 @@ export function ProblemSolution() {
             </div>
             <div className="text-[34px] font-bold text-[var(--blue)] tracking-tight leading-none">500</div>
             <div className="text-sm font-bold text-[var(--navy)] leading-snug">
-              Minimum FICO. Reach 30% More Of Your Market.
+              Minimum FICO. Approve More Patients Than Any Other Program.
             </div>
             <div className="text-xs text-[var(--text-mid)] leading-snug">
-              Most programs stop at 650. HelloRates covers the full 500–650 band your lender won&apos;t touch.
+              Most programs stop at 650. HelloRates covers the full 500–650 band and approves patients others turn away.
             </div>
           </div>
         </div>
@@ -231,7 +233,7 @@ export function ProblemSolution() {
             Get Started Now
           </button>
           <div className="text-xs text-[var(--text-mid)] mt-2.5">
-            Flat $67/mo. Zero dealer fees. 60-day guarantee.
+            Flat $67/mo. Zero merchant financing fees. 60-day guarantee.
           </div>
           <div className="text-xs text-[var(--text-mid)] mt-1">No contract. Cancel anytime. Live the same day.</div>
         </div>

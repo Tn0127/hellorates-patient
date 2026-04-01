@@ -13,15 +13,13 @@ export function GetStartedSection() {
       <div className="hr-container text-center">
         <p className="hr-eyebrow">Getting Started</p>
         <h2 className="hr-headline mx-auto mb-4 max-w-3xl">
-          Get Your First Approval Today.
+          Approve Your First Patient Today.
           <br />
-          <span className="text-[var(--green)]">
-            Portal and Full System Activation. Live Same Day.
-          </span>
+          <span className="text-[var(--green)]">Portal and Full Practice Activation. Live Same Day.</span>
         </h2>
         <p className="hr-lead mx-auto mb-14 max-w-2xl">
-          Your portal and Full System Activation are live the same day you sign up. Start sending approvals today.
-          Printed QR cards ship to your door within a week.
+          Your portal and Full Practice Activation are live the same day you sign up. Start approving patients today.
+          Printed patient QR cards ship to your practice within a week.
         </p>
 
         <div className="mb-10 grid grid-cols-1 gap-6 text-left md:grid-cols-3 md:gap-5">
@@ -32,7 +30,7 @@ export function GetStartedSection() {
             </div>
             <div className="text-[17px] font-bold text-[var(--navy)] mb-2">Create your account</div>
             <div className="text-sm text-[var(--text-mid)] leading-relaxed">
-              Enter your business name and basic info. No credit check, no review. Approved instantly in about two
+              Enter your practice name and basic info. No credit check, no review. Approved instantly in about two
               minutes.
             </div>
             <div className="mt-3.5 text-[11px] font-semibold text-[var(--text-light)] tracking-widest">~2 minutes</div>
@@ -48,8 +46,8 @@ export function GetStartedSection() {
             </div>
             <div className="text-[17px] font-bold text-[var(--navy)] mb-2">Choose your plan &amp; go live</div>
             <div className="text-sm text-[var(--text-mid)] leading-relaxed">
-              Pick monthly or annual, upload your logo, and our team activates your co-branded portal, video, and
-              digital assets the same day.
+              Pick monthly or annual, upload your practice logo, and our team activates your co-branded patient portal,
+              brochures, and digital assets the same day.
             </div>
             <div className="mt-3.5 text-[11px] font-semibold text-[var(--green)] tracking-widest">
               Portal Live Same Day
@@ -61,10 +59,10 @@ export function GetStartedSection() {
             <div className="w-9 h-9 rounded-full bg-[var(--navy)] text-white text-[15px] font-bold flex items-center justify-center mb-4">
               3
             </div>
-            <div className="text-[17px] font-bold text-[var(--navy)] mb-2">Your branded cards arrive</div>
+            <div className="text-[17px] font-bold text-[var(--navy)] mb-2">Your branded patient cards arrive</div>
             <div className="text-sm text-[var(--text-mid)] leading-relaxed">
-              500 QR-enabled cards printed with your name and logo ship to your door. Hand one on a decline. Your
-              customer applies in 60 seconds.
+              500 QR-enabled cards printed with your practice name and logo ship to your door. Hand one to any patient
+              at checkout. They apply in 60 seconds.
             </div>
             <div className="mt-3.5 text-[11px] font-semibold text-[var(--text-light)] tracking-widest">~1 week</div>
           </div>
@@ -74,8 +72,8 @@ export function GetStartedSection() {
         <div className="mx-auto inline-flex max-w-[680px] items-center gap-4 rounded-xl border border-[#BFDBFE] bg-[var(--bg-blue)] px-6 py-5 shadow-sm md:px-8">
           <Zap className="w-[22px] h-[22px] text-[var(--blue)] flex-shrink-0" strokeWidth={2.5} />
           <div className="text-sm text-[var(--navy)] leading-snug text-left">
-            <strong>Don&apos;t wait to get started.</strong> Your portal link goes live the same day you sign up. Text
-            it to a customer tonight. Your co-branded QR cards ship within a week.
+            <strong>Don&apos;t wait to get started.</strong> Your portal link goes live the same day you sign up. Share
+            it with a patient today. Your co-branded QR cards ship within a week.
           </div>
         </div>
 

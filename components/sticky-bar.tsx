@@ -41,7 +41,7 @@ export function StickyBar() {
           <span className="text-sm font-bold text-white">HelloRates</span>
           <span className="hidden h-4 w-px bg-white/30 sm:block" aria-hidden />
           <span className="text-[13px] font-medium text-white">
-            <strong className="text-white">$67/mo</strong> annual &middot; No merchant fees
+            <strong className="text-white">$67/mo</strong> annual &middot; No merchant financing fees
           </span>
           <span className="hidden h-4 w-px bg-white/30 md:block" aria-hidden />
           <span className="text-[13px] text-white">500 FICO approvals &middot; 35+ lenders</span>

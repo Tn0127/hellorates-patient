@@ -86,7 +86,7 @@ type StatConfig = {
 }
 
 const STATS: StatConfig[] = [
-  { key: "contractors", end: 7800, suffix: "+", label: "Contractors", delayMs: 0 },
+  { key: "practices", end: 8300, suffix: "+", label: "Practices", delayMs: 0 },
   { key: "roi", end: 10, suffix: "x", label: "Average ROI", delayMs: 70 },
   { key: "fico", end: 500, suffix: "", label: "Min FICO", delayMs: 140 },
   {
@@ -203,11 +203,9 @@ export function SocialProofBar() {
               ★★★★★
             </span>
             <span className="text-[13px] text-white/85 leading-snug italic">
-              &quot;Recovered a $12,600 HVAC job my primary lender declined. 612 FICO,
-              approved instantly.&quot;{" "}
-              <strong className="text-white not-italic">
-                Mark Stevens, Stevens Heating &amp; Air
-              </strong>
+              &quot;Approved a patient at 588 FICO for a $9,400 dental implant treatment plan. Our previous program said
+              no. HelloRates said yes in 60 seconds.&quot;{" "}
+              <strong className="text-white not-italic">Dr. Sarah Chen, Bright Smile Dental Group</strong>
             </span>
           </div>
         </div>

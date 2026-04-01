@@ -9,15 +9,15 @@ export function ComparisonTable() {
       name: "Cost & Fees",
       rows: [
         {
-          feature: "Dealer and merchant fees",
+          feature: "Processing and merchant financing fees",
           good: "Zero. $67/mo annual or $97/mo monthly, unlimited approvals",
-          bad: "3–15% on every funded deal",
+          bad: "3–15% on every funded treatment",
           highlight: true,
         },
         {
           feature: "Per-loan fees",
-          good: "Never. you keep 100% of every job",
-          bad: "Yes. off the top of every job",
+          good: "Never. you keep 100% of every treatment",
+          bad: "Yes. off the top of every treatment",
           highlight: false,
         },
       ],
@@ -38,15 +38,15 @@ export function ComparisonTable() {
           highlight: false,
         },
         {
-          feature: "New contractor requirements",
-          good: "Any contractor. Day one",
+          feature: "New practice requirements",
+          good: "Any licensed practice. Day one",
           bad: "Revenue minimums and time-in-business required",
           highlight: false,
         },
         {
-          feature: "Partial approval gap funding",
-          good: "HelloRates funds the gap. job made whole",
-          bad: "Customer pays out of pocket or the job is lost",
+          feature: "Full treatment plan gap funding",
+          good: "HelloRates funds the gap. Treatment plan made whole",
+          bad: "Patient pays out of pocket or the treatment is declined",
           highlight: true,
         },
       ],
@@ -69,11 +69,11 @@ export function ComparisonTable() {
         {
           feature: "Credit impact",
           good: "Soft pull only. Zero credit impact",
-          bad: "Hard pull. Harms customer's credit",
+          bad: "Hard pull. Harms patient's credit",
           highlight: false,
         },
         {
-          feature: "Use with existing lender?",
+          feature: "Use alongside existing program?",
           good: "Yes. Runs alongside any program",
           bad: "Usually requires switching programs",
           highlight: false,
@@ -87,13 +87,13 @@ export function ComparisonTable() {
       <div className="hr-container">
         <p className="hr-eyebrow">The Full Picture</p>
         <h2 className="hr-headline mb-4 max-w-3xl">
-          HelloRates vs. Traditional Financing.
+          HelloRates vs. Traditional Patient Financing.
           <br />
           <span className="text-[var(--green)]">There Is No Comparison.</span>
         </h2>
         <p className="hr-lead mb-8 max-w-2xl">
-          Every contractor using a traditional program is paying fees and losing deals they don&apos;t have to lose.
-          Here&apos;s the full picture.
+          Every practice using a traditional patient financing program is paying fees and losing patients they
+          don&apos;t have to lose. Here&apos;s the full picture.
         </p>
 
         <div className="mt-8 overflow-x-auto rounded-2xl border-2 border-[var(--navy)] shadow-[0_20px_50px_-20px_rgba(13,27,79,0.25)] ring-1 ring-[var(--navy)]/10">
@@ -102,10 +102,10 @@ export function ComparisonTable() {
               <tr className="border-b-[3px] border-white/10">
                 <th className="bg-[var(--navy)] text-white text-left text-[15px] font-bold p-4 px-6">Features</th>
                 <th className="bg-[var(--navy)] text-white text-left text-[15px] font-bold p-4 px-6">
-                  HelloRates Contractor Financing
+                  HelloRates Patient Financing
                 </th>
                 <th className="bg-[var(--navy)] text-white text-left text-[15px] font-bold p-4 px-6">
-                  Traditional Financing Companies
+                  Traditional Patient Financing Programs
                 </th>
               </tr>
             </thead>

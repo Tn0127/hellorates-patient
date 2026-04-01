@@ -12,9 +12,9 @@ const rubik = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'HelloRates Contractor Financing | Credit Declines Recovered. Dealer Fees Eliminated.',
+  title: 'HelloRates Patient Financing | More Patients Approved. More Treatment Plans Accepted.',
   description:
-    'HelloRates is the most comprehensive contractor financing program in the market. Recover credit declines, fund the gap on partial approvals, and eliminate 5–15% dealer fees. 35+ lenders. 500 FICO. Flat $67/mo.',
+    'HelloRates Patient Financing Solutions gives medical, dental, chiro, med spa and wellness practices access to 35+ lenders, approvals down to 500 FICO, and zero merchant financing fees. More patients approved. More treatment plans accepted.',
 }
 
 export default function RootLayout({

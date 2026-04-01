@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --blue: #3B82F6;
-  --blue-dark: #2563EB;
-  --navy: #0D1B4F;
+  --blue: #3DA8FF;
+  --blue-dark: #1A7AC4;
+  --navy: #3DA8FF;
   --green: #16A34A;
   --green-bright: #22C55E;
   --white: #ffffff;

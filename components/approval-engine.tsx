@@ -15,20 +15,20 @@ export function ApprovalEngine() {
           <div>
             <p className="hr-eyebrow">Approval Engine Technology</p>
             <h2 id="approval-engine-heading" className="hr-headline mb-5">
-              Single Loan Paths Are
+              Single-Lender Patient Financing
               <br />
-              Rigid and Restrictive.
+              Leaves Patients Behind.
               <br />
-              <span className="text-[var(--green)]">Ours Are Not.</span>
+              <span className="text-[var(--green)]">HelloRates Leaves No One Behind.</span>
             </h2>
             <p className="hr-lead mb-4">
-              Traditional financing gives your customer one shot. One lender. One set of guidelines. One decision. If
-              that lender says no, for any reason, the deal is dead.
+              Traditional patient financing gives your patient one shot. One lender. One set of credit guidelines. One
+              decision. If that lender says no, for any reason, the treatment plan is deferred or lost.
             </p>
             <p className="hr-lead mb-8">
               HelloRates runs each 60-second application through our approval engine against 35+ lender guidelines
               simultaneously in real time. The engine optimizes for the best rate, term, loan amount and highest
-              approval probability for each unique customer profile. Every time.
+              approval probability for each unique patient profile. Every time.
             </p>
 
             <div className="flex flex-col gap-4">
@@ -48,10 +48,10 @@ export function ApprovalEngine() {
                   <Activity className="h-[18px] w-[18px] text-[var(--green)]" strokeWidth={2} />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-[var(--navy)] mb-0.5">Optimized for each customer.</div>
+                  <div className="text-sm font-bold text-[var(--navy)] mb-0.5">Optimized for each patient.</div>
                   <div className="text-[13px] text-[var(--text-mid)] leading-snug">
-                    Rate, term, payment, and loan amount are all optimized simultaneously. Your customer sees up to 3
-                    options and chooses the best fit for their situation.
+                    Rate, term, payment, and loan amount are all optimized simultaneously. Your patient sees up to 3
+                    options and chooses the best fit for their care and budget.
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export function ApprovalEngine() {
                 <div>
                   <div className="text-sm font-bold text-[var(--navy)] mb-0.5">Zero credit impact. Always.</div>
                   <div className="text-[13px] text-[var(--text-mid)] leading-snug">
-                    One soft pull runs against all 35+ guidelines. No hard inquiry until the customer accepts an offer.
+                    One soft pull runs against all 35+ guidelines. No hard inquiry until the patient accepts an offer.
                     No harm to their score at the application stage.
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export function ApprovalEngine() {
             {/* Traditional */}
             <div className="rounded-2xl border border-[#FECACA] bg-[#FEF2F2] p-6 shadow-sm">
               <div className="text-[11px] font-bold text-[#B91C1C] tracking-wide mb-3">
-                Traditional Single-Lender Program
+                TRADITIONAL SINGLE-LENDER PATIENT FINANCING
               </div>
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-12 h-12 rounded-xl bg-[#FEE2E2] flex items-center justify-center flex-shrink-0 text-xl font-bold text-[var(--red)]">
@@ -84,13 +84,15 @@ export function ApprovalEngine() {
                 <div>
                   <div className="text-[15px] font-bold text-[var(--navy)]">One lender. One decision.</div>
                   <div className="text-[13px] text-[var(--text-mid)]">
-                    If they say no, the deal is dead. No alternatives. No second chance.
+                    If they say no, the patient is declined. No alternatives. No second chance at getting care.
                   </div>
                 </div>
               </div>
               <div className="flex gap-2 items-center mt-3 px-3 py-2 bg-[#FEE2E2] rounded-lg">
                 <X className="w-3.5 h-3.5 text-[#e53935]" strokeWidth={2.5} />
-                <span className="text-xs font-semibold text-[#B91C1C]">Rigid. Inflexible. One size fits no one.</span>
+                <span className="text-xs font-semibold text-[#B91C1C]">
+                  Rigid. Inflexible. Patients who need care most get declined.
+                </span>
               </div>
             </div>
 
@@ -110,7 +112,9 @@ export function ApprovalEngine() {
               </div>
               <div className="flex gap-2 items-center mt-2.5 px-3 py-2 bg-[#DCFCE7] rounded-lg">
                 <Check className="w-3.5 h-3.5 text-[var(--green)]" strokeWidth={2.5} />
-                <span className="text-xs font-semibold text-[#15803D]">Flexible. Optimized. Built for approvals.</span>
+                <span className="text-xs font-semibold text-[#15803D]">
+                  Flexible. Optimized. Built to treat more patients.
+                </span>
               </div>
             </div>
           </div>

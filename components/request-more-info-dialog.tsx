@@ -117,7 +117,7 @@ function RequestMoreInfoModal({
               name="email"
               type="email"
               autoComplete="email"
-              placeholder="james@riveraroofing.com"
+              placeholder="dr@sunnyvaledental.com"
               className="h-11 rounded-lg border-[var(--border)] bg-white px-3.5 text-[var(--navy)] placeholder:text-[var(--text-light)]"
             />
           </div>
@@ -144,14 +144,14 @@ function RequestMoreInfoModal({
                 htmlFor="request-info-website"
                 className="text-sm font-semibold text-[var(--navy)]"
               >
-                Business website
+                Practice website
               </Label>
               <Input
                 id="request-info-website"
                 name="website"
                 type="url"
                 autoComplete="url"
-                placeholder="riveraroofing.com"
+                placeholder="sunnyvaledental.com"
                 className="h-11 rounded-lg border-[var(--border)] bg-white px-3.5 text-[var(--navy)] placeholder:text-[var(--text-light)]"
               />
             </div>

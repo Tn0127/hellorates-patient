@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
-import type { ReactNode } from "react"
-import { useState } from "react"
-import { Plus } from "lucide-react"
+import type { ReactNode } from "react";
+import { useState } from "react";
+import { Plus } from "lucide-react";
 
 type FAQItem = {
-  q: string
-  a: ReactNode
-}
+  q: string;
+  a: ReactNode;
+};
 
 const faqs: FAQItem[] = [
   {
-    q: "What happens if my customer defaults after I've been paid?",
+    q: "What happens if a patient defaults after my practice has been paid?",
     a: (
       <>
-        <strong>Nothing happens to you.</strong> The loan is between the homeowner and the lender. If a customer
-        defaults after you have been paid, that is between them and the lender. Your payment is never clawed back.
-        Zero recourse. This is structurally built into every HelloRates transaction.
+        <strong>Nothing happens to your practice.</strong> The loan is between the patient and the lender. If a patient
+        defaults after your practice has been paid, that is between them and the lender. Your payment is never clawed
+        back. Zero recourse. This is structurally built into every HelloRates transaction.
       </>
     ),
   },
@@ -24,29 +24,30 @@ const faqs: FAQItem[] = [
     q: "Do I have to switch lenders?",
     a: (
       <>
-        Never. HelloRates runs <strong>alongside your existing program</strong>. Use it as your primary, your backup for
-        declines, or both. You keep everything you already have and add coverage for every customer they turn away. No
-        existing program? HelloRates is your complete financing solution from day one.
+        Never. HelloRates runs <strong>alongside your existing patient financing program</strong>. Use it as your
+        primary, your backup for declines, or both. You keep everything you already have and add coverage for every
+        patient they decline. No existing program? HelloRates is your complete patient financing solution from day one.
       </>
     ),
   },
   {
-    q: "Are there per-loan or merchant fees?",
+    q: "Are there per-loan or merchant financing fees?",
     a: (
       <>
-        <strong>Zero.</strong> Unlimited loan approvals for <strong>$67/month on the annual plan</strong> or{" "}
-        <strong>$97/month month-to-month</strong>. No per-loan fees, no merchant fees, no dealer charges. Ever. No
-        matter how many deals you close or how large they get, your cost stays flat.
+        <strong>Zero.</strong> Unlimited patient financing approvals for{" "}
+        <strong>$67/month on the annual plan</strong> or <strong>$97/month month-to-month</strong>. No merchant
+        financing fees, no merchant charges. Ever. No matter how many patients you finance or the size of the treatment
+        plan, your cost stays flat.
       </>
     ),
   },
   {
-    q: "What stops the customer from using the money for something else?",
+    q: "What stops the patient from using the funds for something other than their treatment?",
     a: (
       <>
-        Before the customer sees any rates, they agree to a{" "}
-        <strong>legally binding fund agreement locking money to your company by name.</strong> It&apos;s a condition of
-        the application, fully enforceable from the first click, not fine print after approval.
+        Before the patient sees any rates, they agree to a{" "}
+        <strong>legally binding fund agreement locking the funds to your practice by name.</strong> It&apos;s a
+        condition of the application, fully enforceable from the first click, not fine print after approval.
       </>
     ),
   },
@@ -54,7 +55,7 @@ const faqs: FAQItem[] = [
     q: "What are the risks to me?",
     a: (
       <>
-        <strong>Zero recourse.</strong> The loan is between the homeowner and the lender. Not you. If a customer
+        <strong>Zero recourse.</strong> The loan is between the patient and the lender. Not your practice. If a patient
         defaults after you&apos;ve been paid, that&apos;s between them and the lender. Your payment is never clawed
         back.
       </>
@@ -64,29 +65,29 @@ const faqs: FAQItem[] = [
     q: "How fast do I get paid?",
     a: (
       <>
-        <strong>Cash within 24–48 hours of job completion.</strong> No completion certificates, no lender inspections,
-        no holdbacks. You invoice for the full amount and receive the full amount. HelloRates earns on loan
-        origination. Not from you.
+        <strong>Payment within 24–48 hours of treatment confirmation.</strong> No completion certificates, no lender
+        inspections, no holdbacks. You bill for the full treatment amount and receive the full amount. HelloRates earns
+        on loan origination. Not from your practice.
       </>
     ),
   },
   {
-    q: "Does this affect my customer's credit score?",
+    q: "Does this affect my patient\u2019s credit score?",
     a: (
       <>
-        The application is a <strong>soft pull. Zero credit impact.</strong> A customer just declined by your primary
-        lender can immediately check 35+ more options with no further damage to their score. A hard pull only happens
-        if they choose to accept an offer and proceed to funding.
+        The application is a <strong>soft pull. Zero credit impact.</strong> A patient just declined by your primary
+        financing program can immediately check 35+ more options with no further damage to their score. A hard pull
+        only happens if they choose to accept an offer and proceed to funding.
       </>
     ),
   },
   {
-    q: "How quickly does my customer see their approval options?",
+    q: "How quickly does my patient see their financing options?",
     a: (
       <>
         In about <strong>60 seconds</strong> from starting the application. Our approval engine runs each application
         against 35+ lender guidelines in real time simultaneously. There is no waiting, no callbacks, no second form.
-        Your customer sees up to 3 approval options instantly and chooses the best one for their situation.
+        Your patient sees up to 3 financing options instantly and chooses the best one for their care and budget.
       </>
     ),
   },
@@ -94,29 +95,29 @@ const faqs: FAQItem[] = [
     q: "How does the 0% APR option work?",
     a: (
       <>
-        For jobs under $15,000 with customers who have good to excellent credit, HelloRates offers access to{" "}
+        For treatments under $15,000 with patients who have good to excellent credit, HelloRates offers access to{" "}
         <strong>0% Intro APR credit cards up to 21 months</strong> through partnerships with major card issuers. A
-        standard 3% card network processing fee applies, paid to the card network, not HelloRates. You can toggle this
-        option off in your portal if you prefer not to offer it.
+        standard 3% card network merchant financing fee applies, paid to the card network, not HelloRates. You can
+        toggle this option off in your portal if you prefer not to offer it.
       </>
     ),
   },
-]
+];
 
 export function FAQSection() {
-  const [openItems, setOpenItems] = useState<Set<number>>(() => new Set([0, 1]))
+  const [openItems, setOpenItems] = useState<Set<number>>(() => new Set([0, 1, 2]));
 
   const toggle = (idx: number) => {
     setOpenItems((prev) => {
-      const next = new Set(prev)
-      if (next.has(idx)) next.delete(idx)
-      else next.add(idx)
-      return next
-    })
-  }
+      const next = new Set(prev);
+      if (next.has(idx)) next.delete(idx);
+      else next.add(idx);
+      return next;
+    });
+  };
 
   return (
-    <section className="hr-section hr-surface-muted" id="faqs">
+    <section className="hr-section" id="faqs">
       <div className="hr-container">
         <div className="mb-12 text-center">
           <p className="hr-eyebrow">FAQs</p>
@@ -154,5 +155,5 @@ export function FAQSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
