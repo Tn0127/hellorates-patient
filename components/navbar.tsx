@@ -37,7 +37,7 @@ export function Navbar() {
             alt="HelloRates — Patient Financing Solutions"
             width={200}
             height={60}
-            className="h-16 w-auto object-contain md:h-14"
+            className="h-12 w-auto object-contain md:h-14"
             priority
           />
         </Link>
