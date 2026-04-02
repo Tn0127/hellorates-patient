@@ -12,9 +12,9 @@ export function CommercialCallout() {
   return (
     <section className="border-y border-[var(--border)] bg-[var(--bg-light)] py-9 md:py-10">
       <div className="hr-container">
-        <div className="hr-card grid grid-cols-1 items-center gap-8 border border-[#BFDBFE] p-8 md:grid-cols-[1fr_auto] md:gap-10 md:p-10">
+        <div className="hr-card grid grid-cols-1 items-center gap-8 border border-[var(--border-blue-soft)] p-8 md:grid-cols-[1fr_auto] md:gap-10 md:p-10">
           <div className="flex flex-col gap-6 md:flex-row md:items-start">
-            <div className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] border border-[#BFDBFE] bg-white">
+            <div className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] border border-[var(--border)] bg-white">
               <CreditCard className="h-6 w-6 text-[var(--navy)]" strokeWidth={2} />
             </div>
             <div>

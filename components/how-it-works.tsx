@@ -83,7 +83,7 @@ export function HowItWorks() {
           Your patient applies. Your practice gets paid in full within 24–48 hours of your patient confirming their
           financing.
         </p>
-        <div className="mb-10 max-w-[680px] rounded-[10px] border border-[#BFDBFE] border-l-4 border-l-[var(--blue)] bg-[#EBF4FF] p-4 text-sm font-semibold leading-relaxed text-[var(--navy)]">
+        <div className="mb-10 max-w-[680px] rounded-[10px] border border-[var(--border-blue-soft)] border-l-4 border-l-[var(--blue)] bg-[var(--bg-blue)] p-4 text-sm font-semibold leading-relaxed text-[var(--navy)]">
           The funds are legally locked to your practice by name before your patient sees a single rate. A condition of
           the application, enforceable from the first click.
         </div>

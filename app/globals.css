@@ -4,9 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --blue: #3DA8FF;
-  --blue-dark: #1A7AC4;
-  --navy: #3DA8FF;
+  /* Accent: deeper blue (replaces light #3DA8FF on large surfaces & type) */
+  --blue: #2563eb;
+  --blue-dark: #1d4ed8;
+  /* Structural ink + dark chrome (nav, footer, bars, headlines) */
+  --navy: #0d1b4f;
   --green: #16A34A;
   --green-bright: #22C55E;
   --white: #ffffff;
@@ -14,7 +16,9 @@
   --text-mid: #6B7280;
   --text-light: #9CA3AF;
   --bg-light: #F8FAFC;
-  --bg-blue: #EBF4FF;
+  /* Muted slate tint (replaces chalky #EBF4FF) — reads cleaner with navy text + brand blue */
+  --bg-blue: #E9EDF3;
+  --border-blue-soft: #BFCAD8;
   --border: #E5E7EB;
   --gold: #F59E0B;
   --red: #e53935;
@@ -31,13 +35,13 @@
   --secondary-foreground: #0D1B4F;
   --muted: #F8FAFC;
   --muted-foreground: #6B7280;
-  --accent: #EBF4FF;
+  --accent: var(--bg-blue);
   --accent-foreground: #0D1B4F;
   --destructive: #e53935;
   --destructive-foreground: #ffffff;
   --border: #E5E7EB;
   --input: #E5E7EB;
-  --ring: #3B82F6;
+  --ring: var(--blue);
   --radius: 0.625rem;
 }
 
@@ -82,10 +86,28 @@
   }
 }
 
-/* Landing layout & surfaces — navy / blue / green palette unchanged */
+/* Landing layout & surfaces — navy (ink) + accent blue + green CTAs */
 @layer components {
   .hr-container {
-    @apply mx-auto w-full max-w-[1200px] px-5 md:px-8 lg:px-10;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  @media (width >= 48rem) {
+    .hr-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media (width >= 64rem) {
+    .hr-container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
   }
   .hr-section {
     @apply py-16 md:py-24 lg:py-28;

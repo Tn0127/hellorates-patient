@@ -6,7 +6,7 @@ function sanitizeId(raw: string) {
   return raw.replace(/:/g, "");
 }
 
-const accent = "#3DA8FF";
+const accent = "#2563eb";
 const ink = "#132444";
 
 export function TradeIconDental() {

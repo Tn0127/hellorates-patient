@@ -24,7 +24,7 @@ export function Hero() {
         aria-hidden
         style={{
           backgroundImage: `
-            radial-gradient(ellipse 90% 55% at 15% -10%, rgba(59, 130, 246, 0.09), transparent 50%),
+            radial-gradient(ellipse 90% 55% at 15% -10%, rgba(37, 99, 235, 0.07), transparent 50%),
             radial-gradient(ellipse 70% 45% at 95% 10%, rgba(22, 163, 74, 0.06), transparent 45%)
           `,
         }}
@@ -163,7 +163,7 @@ export function Hero() {
             </span>
           </div>
 
-          <div className="mt-5 flex max-w-lg items-start gap-3 rounded-xl border border-[#BFDBFE] bg-[var(--bg-blue)]/80 px-4 py-3 backdrop-blur-sm">
+          <div className="mt-5 flex max-w-lg items-start gap-3 rounded-xl border border-[var(--border-blue-soft)] bg-[var(--bg-blue)] px-4 py-3 shadow-[0_1px_2px_rgba(13,27,79,0.04)]">
             <Shield
               className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--green)]"
               strokeWidth={2.5}

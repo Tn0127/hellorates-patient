@@ -35,9 +35,9 @@ export function Navbar() {
           <HelloRatesImage
             src="/logo.png"
             alt="HelloRates — Patient Financing Solutions"
-            width={220}
-            height={62}
-            className="h-11 w-auto object-contain md:h-12"
+            width={200}
+            height={56}
+            className="h-10 w-auto object-contain md:h-11"
             priority
           />
         </Link>

@@ -42,7 +42,7 @@ export function TradesSection() {
         aria-hidden
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 100% 80% at 50% -30%, rgba(61, 168, 255, 0.2), transparent 50%)",
+            "radial-gradient(ellipse 100% 80% at 50% -30%, rgba(255, 255, 255, 0.11), transparent 50%)",
         }}
       />
       <div className="hr-container relative">

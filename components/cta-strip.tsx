@@ -13,7 +13,7 @@ export function CtaStrip() {
         aria-hidden
         style={{
           backgroundImage: `
-            radial-gradient(ellipse 75% 90% at 100% 20%, rgba(59, 130, 246, 0.18), transparent 52%),
+            radial-gradient(ellipse 75% 90% at 100% 20%, rgba(255, 255, 255, 0.1), transparent 52%),
             radial-gradient(ellipse 55% 70% at 0% 100%, rgba(34, 197, 94, 0.14), transparent 48%)
           `,
         }}

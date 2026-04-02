@@ -74,7 +74,7 @@ export function TestimonialsSection() {
             >
               <div className="px-6 pt-6 text-base tracking-widest text-[var(--gold)]">★★★★★</div>
               <p className="flex-1 px-6 pb-4 pt-2 text-sm leading-relaxed text-[var(--text-mid)]">{t.quote}</p>
-              <div className="mt-auto flex items-center gap-3 border-t border-[#BFDBFE] bg-[var(--bg-blue)] px-6 py-4">
+              <div className="mt-auto flex items-center gap-3 border-t border-[var(--border-blue-soft)] bg-[var(--bg-blue)] px-6 py-4">
                 <div className="h-[42px] w-[42px] shrink-0 overflow-hidden rounded-full bg-[var(--navy)]">
                   <HelloRatesImage
                     src={t.src}

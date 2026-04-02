@@ -172,7 +172,7 @@ export function SocialProofBar() {
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59,130,246,0.25), transparent), radial-gradient(ellipse 60% 40% at 100% 50%, rgba(245,158,11,0.08), transparent)",
+            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255,255,255,0.12), transparent), radial-gradient(ellipse 60% 40% at 100% 50%, rgba(245,158,11,0.08), transparent)",
         }}
       />
 

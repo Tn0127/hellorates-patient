@@ -204,7 +204,7 @@ export function ProblemSolution() {
             </div>
           </div>
 
-          <div className="hr-card flex flex-col gap-2.5 border-[#93C5FD] p-6 ring-1 ring-[var(--blue)]/20">
+          <div className="hr-card flex flex-col gap-2.5 border-[var(--blue)]/35 p-6 ring-1 ring-[var(--blue)]/15">
             <div className="w-9 h-9 rounded-lg bg-[var(--bg-blue)] flex items-center justify-center">
               <svg
                 viewBox="0 0 24 24"

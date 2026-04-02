@@ -9,13 +9,13 @@ export function FinalCta() {
   };
 
   return (
-    <section className="relative overflow-hidden border-t border-[#BFDBFE] bg-[var(--bg-blue)] py-16 md:py-24">
+    <section className="relative overflow-hidden border-t border-[var(--border)] bg-[var(--bg-blue)] py-16 md:py-24">
       <div
-        className="pointer-events-none absolute inset-0 opacity-70"
+        className="pointer-events-none absolute inset-0 opacity-80"
         aria-hidden
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(61, 168, 255, 0.12), transparent 55%)",
+            "radial-gradient(ellipse 85% 55% at 50% 0%, rgba(37, 99, 235, 0.06), transparent 58%)",
         }}
       />
       <div className="hr-container relative max-w-[640px] text-center">

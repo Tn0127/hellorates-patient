@@ -69,7 +69,7 @@ export function GetStartedSection() {
         </div>
 
         {/* Info Box */}
-        <div className="mx-auto inline-flex max-w-[680px] items-center gap-4 rounded-xl border border-[#BFDBFE] bg-[var(--bg-blue)] px-6 py-5 shadow-sm md:px-8">
+        <div className="mx-auto inline-flex max-w-[680px] items-center gap-4 rounded-xl border border-[var(--border-blue-soft)] bg-[var(--bg-blue)] px-6 py-5 shadow-sm md:px-8">
           <Zap className="w-[22px] h-[22px] text-[var(--blue)] flex-shrink-0" strokeWidth={2.5} />
           <div className="text-sm text-[var(--navy)] leading-snug text-left">
             <strong>Don&apos;t wait to get started.</strong> Your portal link goes live the same day you sign up. Share
