@@ -23,11 +23,11 @@ export function Navbar() {
   };
 
   const linkClass =
-    "rounded-lg px-3.5 py-2 text-center text-[13px] font-medium text-white/90 transition-colors hover:bg-white/[0.08] hover:text-white md:text-left";
+    "rounded-lg px-3.5 py-2 text-center text-base font-bold text-white/90 transition-colors hover:bg-white/[0.08] hover:text-white md:text-left";
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[var(--navy)] shadow-[0_1px_0_rgba(255,255,255,0.06),0_8px_32px_rgba(0,0,0,0.12)]">
-      <nav className="hr-container flex h-[4.25rem] items-center justify-between gap-4" aria-label="Main">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#3198FD] shadow-[0_1px_0_rgba(255,255,255,0.06),0_8px_32px_rgba(0,0,0,0.12)]">
+      <nav className="hr-container flex h-20 items-center justify-between gap-4" aria-label="Main">
         <Link
           href="/"
           className="relative inline-flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--navy)]"
@@ -36,8 +36,8 @@ export function Navbar() {
             src="/logo.png"
             alt="HelloRates — Patient Financing Solutions"
             width={200}
-            height={56}
-            className="h-10 w-auto object-contain md:h-11"
+            height={60}
+            className="h-16 w-auto object-contain md:h-14"
             priority
           />
         </Link>
@@ -81,7 +81,7 @@ export function Navbar() {
               <button
                 type="button"
                 onClick={() => scrollTo("pricing")}
-                className="hr-btn-primary-sm w-full md:w-auto"
+                className="hr-btn-primary-sm w-full text-base md:w-auto"
               >
                 Get Started Now
               </button>
